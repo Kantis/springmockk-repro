@@ -17,7 +17,9 @@ tasks.named<Wrapper>("wrapper") {
 }
 
 dependencies {
+    implementation(KotlinX.coroutines.core)
     implementation("org.springframework.boot:spring-boot-starter-webflux")
+    testImplementation(Testing.kotest.framework.datatest)
     testImplementation(Testing.kotest.runner.junit5)
     testImplementation(Testing.kotest.property)
     testImplementation(Testing.mockK)
