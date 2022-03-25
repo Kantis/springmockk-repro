@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class MyController(val service: MyService) {
-    fun doSomething() {
-        service.doSomething()
+    fun doSomething(arg: String) {
+        service.doSomething(arg)
     }
 }

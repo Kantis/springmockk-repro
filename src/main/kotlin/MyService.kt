@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class MyService {
-    fun doSomething() {
-        println("Hello")
+    fun doSomething(arg: String) {
+        println("Hello $arg")
     }
 }
